@@ -170,10 +170,64 @@ h3 {
   background-color: #ffffff;
   gap: 16px;
   border-radius: 0 0 4px 4px;
+  width: 264px;
   height: 428px;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
+.social-media-icons {
+  display: flex;
+
+  margin-left: 16px;
+  width: 232px;
+  height: 40px;
+  gap: 24px;
+}
+.sectionThree .social-media-icons li {
+  width: 40px;
+  height: 40px;
+  box-shadow: none;
+}
+.icon-Icon-1,
+.icon-Icon-2,
+.icon-Icon-3,
+.icon-Icon-4 {
+  border: solid 1px #8e8f99;
+  border-radius: 4px;
+  width: 260px;
+  height: 112px;
+}
+
+.sectionThree .social-media-icons .icon-Ellipse,
+.sectionThree .social-media-icons .icon-Ellipse-1,
+.sectionThree .social-media-icons .icon-Ellipse-2,
+.sectionThree .social-media-icons .icon-Ellipse-3 {
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  border: none;
+  box-shadow: none;
+}
+
+.sectionThree .social-media-icons .icon-Ellipse:hover,
+.sectionThree .social-media-icons .icon-Ellipse-1:hover,
+.sectionThree .social-media-icons .icon-Ellipse-2:hover,
+.sectionThree .social-media-icons .icon-Ellipse-3:hover {
+  background-color: #404bbf;
+}
+
+.sectionThree ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: background-color 0.25ms ease;
+}
+
 .sectionFour ul li {
   display: flex;
   flex-direction: column;
@@ -241,74 +295,71 @@ h3 {
 .logo > span {
   color: #4d5ae5;
 }
-.social-media-icons {
-  display: flex;
-
-  margin-left: 16px;
-  width: 232px;
-  height: 40px;
-  gap: 24px;
-}
 
 footer {
   display: flex;
   gap: 120px;
   background: #2e2f42;
-  height: 312px;
-  padding: 10px;
+  padding: 100px 156px;
   color: #ffffff;
 }
-footer .social-media-icons a {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
 
-footer .social-media-icons a svg {
-  width: 100%;
-  height: 100%;
-  fill: green;
-  transition: fill 0.3s ease;
-}
-
-footer .social-media-icons a {
-  color: #000;
-}
-
-footer .social-media-icons a:hover {
-  background-color: green;
-}
-/* .social-media-icons a {
-  color: #000;
-  width: 40px;
-  height: 40px;
-  display: block;
-  background-color: blue;
-  transition: all 0.2s;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px 0;
-}
-.social-media-icons a:hover {
-  background-color: green;
-} */
+/* Tüm footer'daki ul'ler */
 footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   gap: 16px;
   width: 264px;
-  height: 112px;
-
-  margin-top: 100px;
-  margin-bottom: 100px;
 }
 
-footer ul:first-of-type {
-  margin-left: 156px;
+/* Sol taraftaki logo ve açıklama */
+.footer-left .logo {
+  font-weight: bold;
+  font-size: 18px;
 }
+
+/* Sosyal medya başlığı + ikonlar */
+.footer-social {
+  gap: 24px;
+}
+
+/* İkonlar yatay olacak */
+footer .social-media-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+/* Daire şeklindeki butonlar */
+footer .social-media-icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  transition: background-color 0.3s ease;
+}
+
+.social-media-icons a:hover {
+  background-color: #31d0aa;
+}
+
+/* İkonların boyutu */
+footer .icon {
+  display: flex;
+  flex-direction: column;
+  width: 40px;
+  height: 40px;
+  fill: white;
+}
+
 footer a .logo {
   color: #ffffff;
 }
